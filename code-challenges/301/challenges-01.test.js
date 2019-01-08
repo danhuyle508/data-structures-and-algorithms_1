@@ -124,8 +124,7 @@ const createList = (availableItems) => {
         availableItems.push(name);
       }
     }  
-  }
-)
+  })
 return availableItems
 }
 

@@ -11,4 +11,4 @@ Create a fucntion that takes in an array and reverses it contents without using 
 I took in the array looped through the array but I started at the end, grabbed the values and pushed it into a new array. 
 
 ## Soultion 
-![alt text](./assets/array_reverse.jpg)
+![alt text](https://github.com/danhuyle508/data-structures-and-algorithms/blob/master/assets/array_reverse.jpg)

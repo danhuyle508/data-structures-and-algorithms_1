@@ -6,7 +6,12 @@ def insertShiftArray(arr, num):
         if i != middle:
             shift_arr.append(arr[i])
         else:
-            shift_arr.append(arr[i])
-            shift_arr.append(num)    
+            if count % 2 == 0:
+                shift_arr.append(num) 
+                shift_arr.append(arr[i])   
+            else:
+                shift_arr.append(arr[i])
+                shift_arr.append(num) 
+
     return shift_arr
            

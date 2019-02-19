@@ -9,3 +9,4 @@ We created a new array and appnded the values of the old array into the new one.
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/danhuyle508/data-structures-and-algorithms/blob/master/assets/array_shift.jpg)

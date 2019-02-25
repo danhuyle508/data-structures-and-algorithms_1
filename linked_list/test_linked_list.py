@@ -79,3 +79,84 @@ def test_print_edg_case():
     fruits = LinkedList()
     
     assert fruits.print() == -1
+
+def test_append():    
+    """
+    Can successfully add a node to the end of the linked list
+    """
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+
+    fruits.append('cat')
+
+    expected = 'apples,orange,tomato,cat,'
+
+    assert expected == fruits.print()
+def test_append_two():
+    """
+    Can successfully add multiple nodes to the end of a linked list
+    """    
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+    fruits.append('cat')
+    fruits.append('shoe')
+
+    assert fruits.print() == 'apples,orange,tomato,cat,shoe,'
+
+def test_insert_before():
+    """
+    Can successfully insert a node before a node located i the middle of a linked list
+    """
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+
+    fruits.insert_before('orange', 'grape')
+
+    expected = 'apples,grape,orange,tomato,'
+
+    assert expected == fruits.print()
+def test_insert_before_first():
+    """
+    Can successfully insert a node before the first node of a linked list
+    """  
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+
+    fruits.insert_before('apples', 'grape')
+
+    assert fruits.print() == 'grape,apples,orange,tomato,'
+
+def test_insert_after():
+    """
+    Can successfully insert after a node in the middle of the linked list
+    """
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+
+    fruits.insert_after('orange', 'grape')
+
+    expected = 'apples,orange,grape,tomato,'
+
+    assert expected == fruits.print()
+def test_insert_after_last():
+    """
+    Can successfully insert a node after the last node of the linked list
+    """
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+
+    fruits.insert_after('tomato', 'grape')
+
+    assert fruits.print() == 'apples,orange,tomato,grape,'

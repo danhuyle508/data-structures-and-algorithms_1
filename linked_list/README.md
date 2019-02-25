@@ -9,3 +9,15 @@ Using the tes driven development idea, I wrote the tests that it needs ot pass f
 
 ## API
 No APIs.
+
+# Linked List Insertions
+This program can insert any value in th the linked list to the end of the list, before and after and node.
+
+## Challenge
+Write 3 functions where one appends a value to the end of the list, one inserts before a node, and one to insert after a node.
+
+## Approach & Efficiency
+Using the code from our last challenege, we added functions to complete all these tasks. 
+
+## Solution
+![alt text] ()

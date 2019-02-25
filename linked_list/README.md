@@ -20,4 +20,4 @@ Write 3 functions where one appends a value to the end of the list, one inserts 
 Using the code from our last challenege, we added functions to complete all these tasks. 
 
 ## Solution
-![alt text] ()
+![alt text] (https://github.com/danhuyle508/data-structures-and-algorithms/blob/master/assets/ll_insertions.jpg)

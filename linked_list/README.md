@@ -19,5 +19,17 @@ Write 3 functions where one appends a value to the end of the list, one inserts 
 ## Approach & Efficiency
 Using the code from our last challenege, we added functions to complete all these tasks. 
 
+
+# kth from the end of a Linked List
+This function finds the value k from the end of the linked list
+
+## Challenge
+Write a function that finds the value of k fro the end of the linked list.
+
+## Approach & Efficiency
+Traverse the linked list and append each one into a list. use len(list)-k to find and return the value.
+
 ## Solution
-![alt text](https://github.com/danhuyle508/data-structures-and-algorithms/blob/master/assets/ll_insertions.jpg)
+![alt text]()
+
+

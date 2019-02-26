@@ -75,6 +75,21 @@ class LinkedList():
 
             return output  
         return -1
+
+    def find_from_end(self,k):
+        values = []
+        if not self.head:
+            return 'List is empty.'
+        else:
+            current = self.head
+            while current:
+                values.append(current.value)
+                current = current._next
+            if k < len(values):
+                return values[len(values)-1 - k]
+            else:
+                return 'Value not found.'      
+  
       
 class Node():
     def __init__(self, value):

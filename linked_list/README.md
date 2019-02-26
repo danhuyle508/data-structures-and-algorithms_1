@@ -30,6 +30,6 @@ Write a function that finds the value of k fro the end of the linked list.
 Traverse the linked list and append each one into a list. use len(list)-k to find and return the value.
 
 ## Solution
-![alt text]()
+![alt text](https://github.com/danhuyle508/data-structures-and-algorithms/blob/master/assets/ll_kth_from_end.jpg)
 
 

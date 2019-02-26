@@ -160,3 +160,36 @@ def test_insert_after_last():
     fruits.insert_after('tomato', 'grape')
 
     assert fruits.print() == 'apples,orange,tomato,grape,'
+def test_find_from_end():
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+    fruits.insert('cherry')
+    fruits.insert('kiwi')
+
+    actual = fruits.find_from_end(2)
+
+    expected = 'tomato'
+
+    assert actual == expected
+
+def test_find_from_end_fail():
+    fruits = LinkedList()
+    fruits.insert('apples') 
+    fruits.insert('orange')
+    fruits.insert('tomato')
+    fruits.insert('cherry')
+    fruits.insert('kiwi')
+
+    actual = fruits.find_from_end(7)
+
+    expected = 'Value not found.'
+
+    assert actual == expected    
+def test_find_from_end_empty():
+    fruits = LinkedList()
+    actual = fruits.find_from_end(2)
+    expected = 'List is empty.'
+
+    assert actual == expected

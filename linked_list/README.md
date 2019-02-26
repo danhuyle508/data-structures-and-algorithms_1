@@ -21,3 +21,15 @@ Using the code from our last challenege, we added functions to complete all thes
 
 ## Solution
 ![alt text] ()
+
+# kth from the end of a Linked List
+This function finds the value k from the end of the linked list
+
+## Challenge
+Write a function that finds the value of k fro the end of the linked list.
+
+## Approach & Efficiency
+Traverse the linked list and append each one into a list. use len(list)-k to find and return the value.
+
+## Solution
+![alt text]()

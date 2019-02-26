@@ -9,4 +9,4 @@ We used a while loop to loop through an array to try and find the value. If the 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![alt text]
+![alt text](https://github.com/danhuyle508/data-structures-and-algorithms/blob/master/assets/array_binary_search.jpg)

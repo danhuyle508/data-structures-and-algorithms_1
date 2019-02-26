@@ -19,8 +19,6 @@ Write 3 functions where one appends a value to the end of the list, one inserts 
 ## Approach & Efficiency
 Using the code from our last challenege, we added functions to complete all these tasks. 
 
-## Solution
-![alt text] ()
 
 # kth from the end of a Linked List
 This function finds the value k from the end of the linked list
@@ -33,3 +31,5 @@ Traverse the linked list and append each one into a list. use len(list)-k to fin
 
 ## Solution
 ![alt text]()
+
+

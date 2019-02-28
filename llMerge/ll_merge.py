@@ -21,7 +21,6 @@ class LinkedList():
         curr_2 = list_2.head
         new_head = curr_1
 
-
         while curr_1._next or curr_2._next:
             temp_1 = curr_1._next
             temp_2 = curr_2._next

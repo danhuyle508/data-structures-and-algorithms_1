@@ -1,5 +1,46 @@
 from tree import BinarySearchTree, BinaryTree
 
+def test_breadth_first_traversal_one():
+    my_tree = BinarySearchTree()
+
+    my_tree.add(10)
+    my_tree.add(4)
+    my_tree.add(15) 
+    my_tree.add(25)
+    my_tree.add(7)
+    my_tree.add(1)
+    my_tree.add(13)    
+    assert my_tree.breadth_first_traversal(my_tree.root) == [10,4,15,1,7,13,25]
+
+def test_breadth_first_traversal_two():
+    my_tree = BinarySearchTree()
+
+    my_tree.add(10)
+    my_tree.add(4)
+    my_tree.add(15) 
+    my_tree.add(25)
+    my_tree.add(7)
+    my_tree.add(1)
+    my_tree.add(13)
+    my_tree.add(11)
+    my_tree.add(17)    
+    assert my_tree.breadth_first_traversal(my_tree.root) == [10,4,15,1,7,13,25,11,17]
+
+def test_breadth_first_traversal_three():
+    my_tree = BinarySearchTree()
+
+    my_tree.add(10)
+    my_tree.add(4)
+    my_tree.add(15) 
+    my_tree.add(25)
+    my_tree.add(7)
+    my_tree.add(1)
+    my_tree.add(13)
+    my_tree.add(11)
+    my_tree.add(17)
+    my_tree.add(6)    
+    assert my_tree.breadth_first_traversal(my_tree.root) == [10,4,15,1,7,13,25,6,11,17]
+
 def test_inorder():
     my_tree = BinarySearchTree()
 

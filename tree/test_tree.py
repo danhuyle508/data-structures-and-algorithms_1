@@ -1,5 +1,29 @@
 from tree import BinarySearchTree, BinaryTree
 
+def test_find_maximum_value_one():
+    my_tree = BinarySearchTree()
+
+    my_tree.add(10)
+    my_tree.add(4)
+    my_tree.add(15) 
+    my_tree.add(25)
+    my_tree.add(7)
+    my_tree.add(1)
+    my_tree.add(13)
+    assert my_tree.find_maximum_value(my_tree.root) == 25 
+
+def test_find_maximum_value_two():
+    my_tree = BinarySearchTree()
+
+    my_tree.add(10)
+    my_tree.add(4)
+    my_tree.add(15) 
+    my_tree.add(25)
+    my_tree.add(7)
+    my_tree.add(1)
+    my_tree.add(55)
+    assert my_tree.find_maximum_value(my_tree.root) == 55    
+
 def test_breadth_first_traversal_one():
     my_tree = BinarySearchTree()
 

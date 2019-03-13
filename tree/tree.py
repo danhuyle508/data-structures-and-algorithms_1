@@ -123,6 +123,17 @@ class BinarySearchTree(BinaryTree):
                 return self.contains(value,current.right)
             else: 
                 return False   
+    def find_maximum_value(self, current_node):
+        """
+        get the maximun value
+        """
+        max = 0
+        tree_array = self.preorder(current_node)  
+        print(tree_array)    
+        for i in range(len(tree_array)):
+            if tree_array[i] > max:
+                max = tree_array[i]
+        return max        
 
     def breadth_first_traversal(self,current_node):
         """

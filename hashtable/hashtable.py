@@ -32,6 +32,9 @@ class HashTable():
         return safe_index
 
     def get(self, key):
+        """
+        get the value of a key value pair.
+        """
         index =self.hash(key)
         if self.table[index] is None:
             return None
@@ -43,6 +46,9 @@ class HashTable():
                 current_node = current_node._next
         return  None          
     def contains(self, key):
+        """
+        find if a key exists in the hash table
+        """
         index =self.hash(key)
         if self.table[index] is None:
             return False

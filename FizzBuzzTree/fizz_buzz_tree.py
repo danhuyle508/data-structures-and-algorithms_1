@@ -9,7 +9,7 @@ class BinaryTree(object):
         tree_list =[]
         if current_node.data == self.root.data:
             if int(str(current_node.data)) % 3 == 0:
-                if int(str(current_nodet.data)) % 5 == 0:
+                if int(str(current_node.data)) % 5 == 0:
                     current_node.data = 'FizzBuzz'
                 else:
                    current_node.data = 'Fizz'  

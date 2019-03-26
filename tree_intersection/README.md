@@ -8,3 +8,4 @@ Write a function that takes in 2 trees and returns values that are found in both
 We used a hash table for this. we added the values of one tree intoa hash table and compared it with the values in the second tree. If they had the saem values, they would be pushed into an list whihc would be returned.
 
 ## Solution
+![alt text](https://github.com/danhuyle508/data-structures-and-algorithms/blob/master/assets/tree_intersection.jpg)

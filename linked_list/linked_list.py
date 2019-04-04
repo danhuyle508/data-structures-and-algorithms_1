@@ -1,6 +1,25 @@
+import copy
 class LinkedList():
+    def __init__(self,iterable=None):
+        self.head = None
+        if iterable:
+            for data in iterable:
+                self.insert(data)
+    # def __iter__(self):
     
-    head = None
+    def __iter__(self):
+        current =self.head
+        while current:
+            yield current.value
+            current = current._next
+    def __iadd__(self,value):
+        self.insert(value)
+        return self
+    def __add__(self, iterable):
+        new_list = copy.deepcopy(self)
+        for value in iterable:
+            new_list.insert(value)  
+        return new_list
 
     def insert(self, value):
         """

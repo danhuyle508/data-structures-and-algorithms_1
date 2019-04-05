@@ -158,21 +158,17 @@ class BinarySearchTree(BinaryTree):
         return print_list
 
     def traverse_breath_first(self):
-        def _traverse(node):
-            if not node:
-                return
-            queue = Queue()
-            queue.enqueue(node)
-            while queue.peek_queue():
-                node = queue.dequeue()
-                if node:
-                    yield node.value
-                    if node.left:
-                        queue.enqueue(node.left)
-                        yield from _traverse(node.left)
-                    if node.right:
-                        queue.enqueue(node.right)
-                        yield from _traverse(node.right)
+        queue = Queue()
+        node = self.root
+        queue.enqueue(node)
+        while queue.peek_queue():
+            node = queue.dequeue()
+
+            if node.left:
+                queue.enqueue(node.left)
+            if node.right:
+                queue.enqueue(node.right)
+            yield node.value
 
     def traverse_in_order(self):
             

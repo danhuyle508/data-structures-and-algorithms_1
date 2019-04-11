@@ -1,5 +1,4 @@
 from breadth_first import Graph
-
 def test_breadth_first_one():
     g = Graph()
     apple = g.add_vertex('apple')
@@ -15,4 +14,13 @@ def test_breadth_first_one():
     g.add_edge(kiwi, potato, 9)
     g.add_edge(banana, potato, 11)
 
-    assert g.breadth_first(banana) == ['banana', 'apple', 'kiwi', 'potato', 'orange']
+    assert g.depth_first(banana) == ['banana', 'potato', 'kiwi', 'orange', 'apple']
+
+def test_breadth_first_none():
+    g = Graph()
+    apple = g.add_vertex('apple')
+    banana = g.add_vertex('banana')
+    orange = g.add_vertex('orange')
+    kiwi = g.add_vertex('kiwi')
+    potato = g.add_vertex('potato')
+    assert g.depth_first(banana) == ['banana']

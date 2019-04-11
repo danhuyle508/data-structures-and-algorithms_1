@@ -1,3 +1,4 @@
 {
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": false,
+    "python.pythonPath": "/Users/danle/.local/share/virtualenvs/breath_first_graph-n9m__cHd/bin/python"
 }

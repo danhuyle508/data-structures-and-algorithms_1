@@ -10,13 +10,12 @@ class Stack():
     def peek_stack(self):
         if self.head:
             return self.head.value
-        else:
-            return 'No value.'    
 
     def pop(self):
-        temp = self.head
-        self.head = self.head._next    
-
+        if self.head:
+            temp = self.head
+            self.head = self.head._next    
+            return temp.value
 class Queue():
 
     head = None
@@ -37,14 +36,11 @@ class Queue():
         if self.head:
             temp = self.head
             self.head = self.head._next
-        else:
-            'Empty Queue.'
-
+            return temp.value
     def peek_queue(self):
         if self.head:
             return self.head.value
-        else:
-            return 'No Value.'      
+     
 
 class Node():
     def __init__(self, value):

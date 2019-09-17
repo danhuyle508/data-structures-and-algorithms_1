@@ -9,11 +9,13 @@ public class ArrayReverse{
     }
 
     public static int[] reverseArray(int[] current){
-        int[] newArray = new int[current.length];
-        for(int i = 0; i<current.length;i++){
-            newArray[i] = current[current.length - 1 - i];
+        int temp;
+        for(int i = 0; i<current.length/2;i++){
+            // System.out.print("this is current " + current[i]);
+            temp = current[current.length - 1 - i];
+            current[current.length - 1 - i] = current[i];
+            current[i] = temp;
         }
-        return newArray;
+        return current;
     }
-    
 }

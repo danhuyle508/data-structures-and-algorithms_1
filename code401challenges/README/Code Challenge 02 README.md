@@ -8,4 +8,4 @@ Depends on the length of the array.
 Space: O(n)
 Also depends on the length of the array.
 ## Solution
-![image]()
+![image](https://github.com/danhuyle508/data-structures-and-algorithms_1/blob/master/code401challenges/photos/code%20challenge%2002.jpg)

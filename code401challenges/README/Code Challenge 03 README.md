@@ -9,4 +9,4 @@ everytime the key is not found, the sample size becomes half.
 Space: O(1)
 No new variable of significance is made aside from start, end, and mid which should not be a big deal.
 ## Solution
-![image]()
+![image](https://github.com/danhuyle508/data-structures-and-algorithms_1/blob/master/code401challenges/photos/Code%20challenge%2003.jpg)

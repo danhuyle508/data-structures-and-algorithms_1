@@ -69,4 +69,40 @@ public class LinkedListTest {
                 randomList.isEmpty()
         );
     }
+    @Test
+    public void appendTest(){
+        randomList.insert(3);
+        randomList.insert(2);
+        randomList.insert(1);
+        assertEquals(
+                "This should give back true.",
+                4,
+                randomList.append(4).value
+        );
+    }
+    @Test
+    public void insertBeforeTest(){
+        randomList.insert(3);
+        randomList.insert(2);
+        randomList.insert(1);
+        randomList.insertBefore(3,4);
+        assertEquals(
+                "This should give back true.",
+                "1, 2, 4, 3, ",
+                randomList.toString()
+        );
+    }
+    @Test
+    public void insertAfterTest(){
+        randomList.insert(3);
+        randomList.insert(2);
+        randomList.insert(1);
+        randomList.insertAfter(3,4);
+        assertEquals(
+                "This should give back true.",
+                "1, 2, 3, 4, ",
+                randomList.toString()
+        );
+    }
+
 }
